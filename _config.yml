@@ -18,13 +18,13 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 title                    : "Max Ogryzko"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "Max Ogryzko"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : https://images.adventures.is/assets/uploads/2017/02/07160133/laugavegurtrek-mountainviews-iceland1.jpg
+logo                     : # https://images.adventures.is/assets/uploads/2017/02/07160133/laugavegurtrek-mountainviews-iceland1.jpg
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -107,17 +107,17 @@ analytics:
 # Site Author
 author:
   name             : "Max Ogryzko"
-  avatar           : imgur.com/WIYjRAo
-  bio              : "I am an ok person."
+  avatar           : "imgur.com/WIYjRAo"
+  bio              : "Senior at Columbia University"
   location         : "New York, NY"
   email            : "m.ogryzko@columbia.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:m.ogryzko@columbia.edu
-    - label: "Website"
+    - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://linkedin.com/in/max-ogryzko-051b10150/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/mogryzko"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
