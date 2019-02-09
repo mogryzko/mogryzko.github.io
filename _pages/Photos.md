@@ -1,6 +1,6 @@
 ---
 title: "Photos that I enjoy"
-permalink: /Photos/
+permalink: /photos/
 author-profile: true
 ---
 
