@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Resume"
-    url: /resume/
-  - title: "Blog"
-    url: /blog/
+    url: https://mogryzko.github.io/Max_Ogryzko_Resume.pdf
+  - title: "Photos"
+    url: /photos/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
