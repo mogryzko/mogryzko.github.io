@@ -13,9 +13,9 @@ images:
   {% endfor %}
 </ul>
 
-<p id="viewof-slider"></p>
 <p id="test"></p>
 <div id="chart"></div>
+<p id="viewof-slider"></p>
 <p id="viewof-gender"></p>
 <p id="viewof-type"></p>
 
@@ -23,9 +23,9 @@ images:
   import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
 
   const renders = {
-    "viewof slider": "#viewof-slider",
     "test": "#test",
     "chart": "#chart",
+    "viewof slider": "#viewof-slider",
     "viewof gender": "#viewof-gender",
     "viewof type": "#viewof-type",
   };
