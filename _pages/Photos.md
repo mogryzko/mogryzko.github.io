@@ -34,7 +34,9 @@ images:
 <div class="fullwidth">
   <div id="chart"></div>
 </div> 
-<div id="viewof-slider"></div>
+<div class="textsize">
+  <div id="viewof-slider"></div>
+</div>
 <div class="textsize">
   <div id="viewof-gender"></div>
 </div>
