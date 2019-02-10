@@ -14,6 +14,7 @@ images:
 </ul>
 
 <p id="viewof-slider"></p>
+<p id="test"></p>
 <div id="chart"></div>
 <p id="viewof-gender"></p>
 <p id="viewof-type"></p>
@@ -23,6 +24,7 @@ images:
 
   const renders = {
     "viewof slider": "#viewof-slider",
+    "test": "#test",
     "chart": "#chart",
     "viewof gender": "#viewof-gender",
     "viewof type": "#viewof-type",
