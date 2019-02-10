@@ -23,9 +23,9 @@ images:
 
   const renders = {
     "viewof slider": "#viewof-slider",
+    "chart": "#chart",
     "viewof gender": "#viewof-gender",
     "viewof type": "#viewof-type",
-    "chart": "#chart",
   };
 
   import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
