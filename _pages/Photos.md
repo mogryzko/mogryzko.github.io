@@ -19,7 +19,7 @@ images:
   margin-right: -50vw;
 }
 .textsize {
-  font-size: 20%;
+  font-size: 80%;
   }
 </style>
 
@@ -35,7 +35,9 @@ images:
   <div id="chart"></div>
 </div> 
 <div id="viewof-slider"></div>
-<div id="viewof-gender"></div>
+<div class="textsize">
+  <div id="viewof-gender"></div>
+</div>
 <div class="textsize">
   <div id="viewof-type"></div>
 </div>
