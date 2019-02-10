@@ -14,9 +14,9 @@ images:
 </ul>
 
 <p id="viewof-slider"></p>
+<div id="chart"></div>
 <p id="viewof-gender"></p>
 <p id="viewof-type"></p>
-<div id="chart"></div>
 
 <script type="module">
   import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
