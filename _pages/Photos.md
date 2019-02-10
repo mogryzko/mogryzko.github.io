@@ -1,6 +1,6 @@
 ---
 title: "Photos that I enjoy"
-permalink: /photos/
+permalink: /blog/
 author-profile: true
 images:
   - image_path: http://mogryzko.github.io/images/DSC_1286.jpg
