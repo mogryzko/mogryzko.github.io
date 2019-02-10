@@ -13,26 +13,29 @@ images:
   {% endfor %}
 </ul>
 
-
+<p id="viewof-slider"></p>
+<p id="viewof-gender"></p>
+<p id="viewof-type"></p>
+<div id="chart"></div>
 
 <script type="module">
-  // Load the Observable runtime and inspector.
-  import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
-
-  // Your notebook, compiled as an ES module.
   import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
 
-  // Load the notebook, observing its cells with a default Inspector
-  // that simply renders the value of each cell into the provided DOM node.
-  Runtime.load(notebook, (cell) => {
-  if (cell.name === "chart") {
-    return {
-      fulfilled: (value) => {
-        document.getElementById("chart").appendChild(value);
-      }
-    };
-  }
-});
+  const renders = {
+    "viewof slider": "#viewof-slider",
+    "viewof gender": "#viewof-gender",
+    "viewof type": "#viewof-type",
+    "chart": "#chart",
+  };
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+  for (let i in renders)
+    renders[i] = document.querySelector(renders[i]);
+
+  Runtime.load(notebook, (variable) => {
+    if (renders[variable.name])
+      return new Inspector(renders[variable.name]);
+  });
 </script>
 
 
