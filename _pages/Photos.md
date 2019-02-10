@@ -9,7 +9,7 @@ images:
 
 <ul class="photo-gallery">
   {% for image in page.images %}
-    <li><img src="{{ image.image_path }}" alt="drawing" height = "400"/></li>
+    <li><img src="{{ image.image_path }}" alt="drawing" width = "200"/></li>
   {% endfor %}
 </ul>
 
@@ -24,7 +24,15 @@ images:
 
   // Load the notebook, observing its cells with a default Inspector
   // that simply renders the value of each cell into the provided DOM node.
-  Runtime.load(notebook, Inspector.into(document.body));
+  Runtime.load(notebook, (cell) => {
+  if (cell.name === "chart") {
+    return {
+      fulfilled: (value) => {
+        document.getElementById("chart").appendChild(value);
+      }
+    };
+  }
+});
 </script>
 
 
