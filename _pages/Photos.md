@@ -9,6 +9,19 @@ images:
 
 <link href="https://mogryzko.github.io/main.css" rel="stylesheet" />
 
+<style>
+.fullwidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 200px;
+  border-color: green;
+}
+</style>
+
 
 <ul class="photo-gallery">
   {% for image in page.images %}
