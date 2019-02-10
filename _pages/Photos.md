@@ -14,7 +14,9 @@ images:
 </ul>
 
 <p id="test"></p>
-<div id="chart"></div>
+<div class = "fullwidth">
+  <div id="chart"></div>
+</div>
 <div id="viewof-slider"></div>
 <div id="viewof-gender"></div>
 <div id="viewof-type"></div>
