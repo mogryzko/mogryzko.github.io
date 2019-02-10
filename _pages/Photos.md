@@ -15,5 +15,19 @@ images:
 
 
 
+<script type="module">
+  // Load the Observable runtime and inspector.
+  import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
+
+  // Your notebook, compiled as an ES module.
+  import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
+
+  // Load the notebook, observing its cells with a default Inspector
+  // that simply renders the value of each cell into the provided DOM node.
+  Runtime.load(notebook, Inspector.into(document.body));
+</script>
+
+
+
 
 
