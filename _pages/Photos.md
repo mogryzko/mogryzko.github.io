@@ -7,6 +7,8 @@ images:
   - image_path: http://mogryzko.github.io/images/IMG_20171230_150856229_HDR.jpg
 ---
 
+<link href="mogryzko.github.io/main.css" rel "stylesheet" />
+
 <ul class="photo-gallery">
   {% for image in page.images %}
     <li><img src="{{ image.image_path }}" alt="drawing" width = "200"/></li>
