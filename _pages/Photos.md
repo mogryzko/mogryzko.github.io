@@ -17,8 +17,10 @@ images:
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 500px;
 }
+.textsize {
+  font-size = 80%;
+  }
 </style>
 
 
@@ -34,7 +36,9 @@ images:
 </div> 
 <div id="viewof-slider"></div>
 <div id="viewof-gender"></div>
-<div id="viewof-type"></div>
+<div class="textsize">
+  <div id="viewof-type"></div>
+</div>
 
 <script type="module">
   import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
