@@ -17,8 +17,7 @@ images:
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 200px;
-  border-color: green;
+  padding: 500px;
 }
 </style>
 
