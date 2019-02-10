@@ -7,7 +7,8 @@ images:
   - image_path: http://mogryzko.github.io/images/IMG_20171230_150856229_HDR.jpg
 ---
 
-<link href="mogryzko.github.io/main.css" rel="stylesheet" />
+<link href="https://mogryzko.github.io/main.css" rel="stylesheet" />
+
 
 <ul class="photo-gallery">
   {% for image in page.images %}
@@ -16,9 +17,9 @@ images:
 </ul>
 
 <p id="test"></p>
-<div class = "fullwidth">
+<div class="fullwidth">
   <div id="chart"></div>
-</div>
+</div> 
 <div id="viewof-slider"></div>
 <div id="viewof-gender"></div>
 <div id="viewof-type"></div>
