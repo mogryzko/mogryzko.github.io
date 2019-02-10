@@ -19,7 +19,7 @@ images:
   margin-right: -50vw;
 }
 .textsize {
-  font-size = 80%;
+  font-size: 20%;
   }
 </style>
 
