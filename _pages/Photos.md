@@ -1,5 +1,5 @@
 ---
-title: "Photos that I enjoy"
+title: "A blog"
 permalink: /blog/
 author-profile: true
 images:
