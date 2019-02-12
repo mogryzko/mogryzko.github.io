@@ -9,19 +9,7 @@ images:
 
 <link href="https://mogryzko.github.io/main.css" rel="stylesheet" />
 
-<style>
-.fullwidth {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-.textsize {
-  font-size: 80%;
-  }
-</style>
+<p> <strong> Currently under construction </strong> </p>
 
 
 <ul class="photo-gallery">
@@ -30,40 +18,6 @@ images:
   {% endfor %}
 </ul>
 
-<p id="test"></p>
-<div class="fullwidth">
-  <div id="chart"></div>
-</div> 
-<div class="textsize">
-  <div id="viewof-slider"></div>
-</div>
-<div class="textsize">
-  <div id="viewof-gender"></div>
-</div>
-<div class="textsize">
-  <div id="viewof-type"></div>
-</div>
-
-<script type="module">
-  import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
-
-  const renders = {
-    "test": "#test",
-    "chart": "#chart",
-    "viewof slider": "#viewof-slider",
-    "viewof gender": "#viewof-gender",
-    "viewof type": "#viewof-type",
-  };
-
-  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
-  for (let i in renders)
-    renders[i] = document.querySelector(renders[i]);
-
-  Runtime.load(notebook, (variable) => {
-    if (renders[variable.name])
-      return new Inspector(renders[variable.name]);
-  });
-</script>
 
 
 
