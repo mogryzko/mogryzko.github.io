@@ -6,9 +6,48 @@ layout: archive
 
 
 
-Hi, my name is Max Ogryzko. I'm currently studying computer science at Columbia University.
+Hi, my name is Max Ogryzko. I'm currently studying computer science at Columbia University, but before that I grew up in Seattle, WA. Recently I've been especially interested in computer vision and data visualization. In my free time I love being outdoors and around friends.
+
+# Here's a cool data visualization project
+
+<p id="test"></p>
+<div class="fullwidth">
+  <div id="chart"></div>
+</div> 
+<div class="textsize">
+  <div id="viewof-slider"></div>
+</div>
+<div class="textsize">
+  <div id="viewof-gender"></div>
+</div>
+<div class="textsize">
+  <div id="viewof-type"></div>
+</div>
+
+<script type="module">
+  import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
+
+  const renders = {
+    "test": "#test",
+    "chart": "#chart",
+    "viewof slider": "#viewof-slider",
+    "viewof gender": "#viewof-gender",
+    "viewof type": "#viewof-type",
+  };
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+  for (let i in renders)
+    renders[i] = document.querySelector(renders[i]);
+
+  Runtime.load(notebook, (variable) => {
+    if (renders[variable.name])
+      return new Inspector(renders[variable.name]);
+  });
+</script>
+
+## Here's some photos I like
 
 
-
+<img src="http://mogryzko.github.io/images/DSC_1286.jpg" width=200><img src="http://mogryzko.github.io/images/IMG_20171230_150856229_HDR.jpg" width=200>
 
 
