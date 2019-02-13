@@ -95,8 +95,11 @@ layout: archive
     renders[i] = document.querySelector(renders[i]);
 
   Runtime.load(notebook, (variable) => {
-    if (renders[variable.name])
+    if (renders[variable.name]) {
       return new Inspector(renders[variable.name]);
+    } else {
+      return true;
+    }
   });
 </script>
 </b></p>
