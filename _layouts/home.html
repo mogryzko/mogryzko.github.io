@@ -9,10 +9,10 @@ layout: archive
 </style>
 
 
-<p>Hi, my name is Max Ogryzko. I'm currently studying computer science at Columbia University, but before that I grew up in Seattle, WA. Recently I've been interested in computer vision and data visualization. In my free time I love being outdoors and around friends.
+<p>Hi, my name is Max Ogryzko (if you couldn't tell by the url of the website). I'm currently studying computer science at Columbia University, but before that I grew up in Seattle, WA. I like learning the seemingly unending amount of stuff you can do with computer science. I also like pickup sports and being outdoors. Below are some projects I've worked on recently: 
 </b></p>
 <p><div class="space"></div>
-<strong>Here's a cool data visualization project</strong>
+<strong>A Mapping of Mental Health and Mass Shootings in America</strong>
 </b></p>
 <div class="textsize"> 
   <div id="test"></div>
@@ -37,6 +37,52 @@ layout: archive
     "viewof slider": "#viewof-slider",
     "viewof gender": "#viewof-gender",
     "viewof type": "#viewof-type",
+  };
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+  for (let i in renders)
+    renders[i] = document.querySelector(renders[i]);
+
+  Runtime.load(notebook, (variable) => {
+    if (renders[variable.name])
+      return new Inspector(renders[variable.name]);
+  });
+</script>
+</b></p>
+
+
+
+<p><div class="space"></div>
+<strong>Comparing the Sentiments of Russian Trolls to Normal Twitter Users</strong>
+</b></p>
+<div class="textsize"> 
+  <div id="viewof-category"></div>
+</div>
+<div class="textsize"> 
+  <div id="viewof-filter"></div>
+</div>
+<div class="textsize"> 
+  <div id="random"></div>
+</div>
+<div class="textsize"> 
+  <div id="reset"></div>
+</div>
+<div id="topchart"></div>
+<div id="bottomchart"></div>
+<div class="textsize">
+  <div id="explaination"></div>
+</div>
+
+<script type="module">
+  import notebook from "https://api.observablehq.com/@mogryzko/for-chris/2.js";
+
+  const renders = {
+    "viewof category": "#viewof-category",
+    "viewof filter": "#viewof-filter",
+    "random": "#viewof-random",
+    "reset": "#reset",
+    "topchart": "#topchart",
+    "bottomchart": "#bottomchart",
   };
 
   import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
