@@ -108,8 +108,8 @@ analytics:
 author:
   name             : # "Max Ogryzko"
   avatar           : "https://i.imgur.com/RVcaKCV.jpg"
-  bio              : "Senior at Columbia University"
-  location         : "New York, NY"
+  bio              : "Columbia University class of 2019"
+  location         : "Seattle, WA"
   email            : "m.ogryzko@columbia.edu"
   links:
     - label: "Email"
@@ -117,7 +117,7 @@ author:
       # url: mailto:m.ogryzko@columbia.edu
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url: "https://linkedin.com/in/max-ogryzko-051b10150/"
+      url: "https://linkedin.com/in/mogryzko/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
