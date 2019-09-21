@@ -3,11 +3,113 @@ layout: archive
 ---
 
 {{ content }}
+<style>
+.space { margin-top: 200px; }
+.textsizesmall { font-size: 60%; background-color: none;}
+.textsize { font-size: 80%; background-color: none;}
+  .button { background-color: white; 
+            font-size: 80%; }
+  .gif { width: 350px; }
+</style>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h2>About Me</h2>
 
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
+Hi, my name is Max Ogryzko (if you couldn't tell by the url of the website). I'm currently studying computer science at Columbia University, but before that I grew up in Seattle, WA. I like learning the seemingly unending amount of stuff you can do with computer science. I also like pickup sports and being outdoors. 
 
-{% include paginator.html %}
+<h2>Projects</h2>
+
+<h3>Mapping Mental Health's Relation to Mass Shootings in America</h3>
+<div class="textsize"> 
+  <div id="test"></div>
+</div>
+<div id="chart"></div>
+<div class="textsize">
+  <div id="viewof-slider"></div>
+</div>
+<div class="textsize">
+  <div id="viewof-gender"></div>
+</div>
+<div class="textsize">
+  <div id="viewof-type"></div>
+</div>
+
+<script type="module">
+  import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
+  
+  const renders = {
+    "test": "#test",
+    "chart": "#chart",
+    "viewof slider": "#viewof-slider",
+    "viewof gender": "#viewof-gender",
+    "viewof type": "#viewof-type",
+  };
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+  for (let i in renders)
+    renders[i] = document.querySelector(renders[i]);
+
+  Runtime.load(notebook, (variable) => {
+    if (renders[variable.name])
+      return new Inspector(renders[variable.name]);
+  });
+</script>
+</b></p>
+
+<hr>
+
+
+<h3>Comparing the Sentiments of Russian Trolls to Normal Twitter Users</h3>
+
+<div id="bottomchart"></div>
+<div class="textsizesmall"> 
+  <div id="viewof-category"></div>
+</div>
+<div class="textsizesmall"> 
+  <div id="viewof-filter"></div>
+</div>
+<div class="button"> 
+  <div id="random"></div>
+</div>
+<div id="function-showTooltip"></div>
+<div id="function-hideTooltip"></div>
+
+<script type="module">
+  import notebook from "https://api.observablehq.com/@mogryzko/for-chris/2.js";
+
+  const renders = {
+    "bottomchart": "#bottomchart",
+    "viewof category": "#viewof-category",
+    "viewof filter": "#viewof-filter",
+    "random": "#random",
+    "function showTooltip": "#function-showTooltip",
+    "function hideTooltip": "#function-hideTooltip",
+  };
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+  for (let i in renders)
+    renders[i] = document.querySelector(renders[i]);
+
+  Runtime.load(notebook, (variable) => {
+    if (renders[variable.name]) {
+      return new Inspector(renders[variable.name]);
+    } else {
+      return true;
+    }
+  });
+</script>
+</b></p>
+
+<hr>
+<h3>NBA Defender AI</h3>
+<a href="https://github.com/mogryzko/NBA-Defensive-AI">Link to project</a>
+<br></br>
+<font size="-1">The black dot is a real NBA player on offense. The gold dot is a real NBA player on defense. The red dot is the AI player, trained to play defense as well.</font>
+<br></br>
+<img src="https://raw.githubusercontent.com/mogryzko/NBA-Defensive-AI/master/gif1.gif" alt="AI1" class="gif"></img><img src="https://raw.githubusercontent.com/mogryzko/NBA-Defensive-AI/master/gif2.gif" alt="AI2" class="gif"></img>
+
+<hr>
+
+<h3>NYC Building Recognition App</h3>
+<a href="https://github.com/roop-pal/nyc-visual-building-annotator">Link to project</a>
+
+
