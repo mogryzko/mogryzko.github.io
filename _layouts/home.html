@@ -10,27 +10,22 @@ layout: archive
   .button { background-color: white; 
             font-size: 80%; }
   .gif { width: 350px; }
-  body {
-  width: 200px;
-  height: 200px;
-  display: block;
-  position: relative;
-}
-
-body::after {
-  content: "";
-  background: url(https://cdn.cnn.com/cnnnext/dam/assets/170612142756-02-best-of-iceland.jpg);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.cnn.com/cnnnext/dam/assets/170612142756-02-best-of-iceland.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity: 0.8;
+    filter:alpha(opacity=50);
+  }
 </style>
 
-<body>
+<div class="background"></div>
 
 <h2>About Me</h2>
 
@@ -131,6 +126,6 @@ body::after {
 
 <h3>NYC Building Recognition App</h3>
 <a href="https://github.com/roop-pal/nyc-visual-building-annotator">Link to project</a>
-</body>
+
 
 
