@@ -5,8 +5,8 @@ layout: archive
 {{ content }}
 <style>
   .space { margin-top: 200px; }
-  .textsizesmall { font-size: 60%; background-color: none;}
-  .textsize { font-size: 80%; background-color: none;}
+  .textsizesmall { font-size: 60%; background-color: none; opacity: 0.0;}
+  .textsize { font-size: 80%; background-color: none; opacity: 0.0;}
   .button { background-color: white; 
             font-size: 80%; }
   .gif { width: 350px; }
@@ -18,13 +18,12 @@ layout: archive
   margin: 0 auto;
   z-index: 0;
   }
-
   body::after {
     background: url('https://cdn.cnn.com/cnnnext/dam/assets/170612142756-02-best-of-iceland.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     content: "";
-    opacity: 0.5;
+    opacity: 0.2;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -32,8 +31,6 @@ layout: archive
     left: 0;
     z-index: -1;   
   }
-
-
 </style>
 
 <body>
