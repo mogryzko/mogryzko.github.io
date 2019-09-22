@@ -10,19 +10,23 @@ layout: archive
   .button { background-color: white; 
             font-size: 80%; }
   .gif { width: 350px; }
-  body  {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  }
-  }
-  body::before {
-  content: '';
+  body {
+  width: 200px;
+  height: 200px;
   display: block;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background: url(https://cdn.cnn.com/cnnnext/dam/assets/170612142756-02-best-of-iceland.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background:  url("https://cdn.cnn.com/cnnnext/dam/assets/170612142756-02-best-of-iceland.jpg");
-  opacity: 0.2;
+  z-index: -1;   
 }
 </style>
 
