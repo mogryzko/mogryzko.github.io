@@ -1,7 +1,4 @@
 ---
-layout: archive
----
-
 {{ content }}
 <style>
   .space { margin-top: 200px; }
@@ -9,17 +6,7 @@ layout: archive
   .textsize { font-size: 80%; background-color: none;}
   .button { background-color: white; font-size: 80%; }
   .gif { width: 350px; }
-  .textbox { 
-    margin-bottom: 20px;
-    background-color: white; 
-    border-style: solid; 
-    border-width: 10px; 
-    border-color: white; 
-    z-index: 0;}
-  .textbox::after {
-    opacity: 0.8;
-    z-index: -1;
-  }
+  .textbox { background-color: white; border-width: 5px; opacity: 0.8;}
   body {
   width: 100%;
   height: 100%;
@@ -33,7 +20,7 @@ layout: archive
     background-repeat: no-repeat;
     background-attachment: fixed;
     content: "";
-    opacity: 0.5;
+    opacity: 0.8;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -41,19 +28,18 @@ layout: archive
     left: 0;
     z-index: -1;   
   }
-  
 </style>
-
 <body>
 <div class="textbox">
 <h2>About Me</h2>
-<div>Hi, my name is Max Ogryzko (if you couldn't tell by the url of the website). I recently concluded an internship with </div><a href="https://ui.kpf.com/" target="_blank"><img src="https://images.squarespace-cdn.com/content/568ee2b4cbced6419694f1fc/1455733898959-I3GM3973ODHP0L61AS72/LogoUI.gif?content-type=image%2Fgif" width="50" height="50"></a><div>. Before that, I graduated from Columbia University with a degree in Computer Science. Before <i>that</i>, I graduated from Whitman College with a liberal arts degree. And I am changing this.</div> 
+<body>Hi, my name is Max Ogryzko (if you couldn't tell by the url of the website). I recently concluded an internship with </body><a href="https://ui.kpf.com/" target="_blank"><img src="https://images.squarespace-cdn.com/content/568ee2b4cbced6419694f1fc/1455733898959-I3GM3973ODHP0L61AS72/LogoUI.gif?content-type=image%2Fgif" width="50" height="50"></a><body>. Before that, I graduated from Columbia University with a degree in Computer Science. Before <i>that</i>, I graduated from Whitman College with a liberal arts degree.</body> 
 </div>
-
+<div class="textbox">
 <h2>Projects</h2>
 
 <h3>Mapping Mental Health's Relation to Mass Shootings in America</h3>
-  
+</div>
+
 <div class="textsize"> 
   <div id="test"></div>
 </div>
@@ -67,7 +53,6 @@ layout: archive
 <div class="textsize">
   <div id="viewof-type"></div>
 </div>
-
 <script type="module">
   import notebook from "https://api.observablehq.com/@mogryzko/assignment-3/2.js";
   
@@ -78,11 +63,9 @@ layout: archive
     "viewof gender": "#viewof-gender",
     "viewof type": "#viewof-type",
   };
-
   import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
   for (let i in renders)
     renders[i] = document.querySelector(renders[i]);
-
   Runtime.load(notebook, (variable) => {
     if (renders[variable.name])
       return new Inspector(renders[variable.name]);
@@ -92,6 +75,8 @@ layout: archive
 
 <hr>
 
+
+<div class="textbox">
 <h3>Comparing the Sentiments of Russian Trolls to Normal Twitter Users</h3>
 
 <div id="bottomchart"></div>
@@ -106,10 +91,8 @@ layout: archive
 </div>
 <div id="function-showTooltip"></div>
 <div id="function-hideTooltip"></div>
-
 <script type="module">
   import notebook from "https://api.observablehq.com/@mogryzko/for-chris/2.js";
-
   const renders = {
     "bottomchart": "#bottomchart",
     "viewof category": "#viewof-category",
@@ -118,11 +101,9 @@ layout: archive
     "function showTooltip": "#function-showTooltip",
     "function hideTooltip": "#function-hideTooltip",
   };
-
   import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
   for (let i in renders)
     renders[i] = document.querySelector(renders[i]);
-
   Runtime.load(notebook, (variable) => {
     if (renders[variable.name]) {
       return new Inspector(renders[variable.name]);
@@ -132,7 +113,6 @@ layout: archive
   });
 </script>
 </b></p>
-
 <hr>
 <h3>NBA Defender AI</h3>
 <a href="https://github.com/mogryzko/NBA-Defensive-AI">Link to project</a>
@@ -140,14 +120,8 @@ layout: archive
 <font size="-1">The black dot is a real NBA player on offense. The gold dot is a real NBA player on defense. The red dot is the AI player, trained to play defense as well.</font>
 <br></br>
 <img src="https://raw.githubusercontent.com/mogryzko/NBA-Defensive-AI/master/gif1.gif" alt="AI1" class="gif"></img><img src="https://raw.githubusercontent.com/mogryzko/NBA-Defensive-AI/master/gif2.gif" alt="AI2" class="gif"></img>
-
 <hr>
-
 <h3>NYC Building Recognition App</h3>
 <a href="https://github.com/roop-pal/nyc-visual-building-annotator">Link to project</a>
-<h3>Test</h3>
-I am trying some text to see if the page moves down
-
+</div>
 </body>
-
-
