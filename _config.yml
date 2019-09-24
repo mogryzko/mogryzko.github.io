@@ -107,17 +107,17 @@ analytics:
 # Site Author
 author:
   name             : # "Max Ogryzko"
-  avatar           : "https://i.imgur.com/RVcaKCV.jpg"
-  bio              : ""
-  location         : "Seattle, WA"
-  email            : "m.ogryzko@columbia.edu"
+  avatar           : #"https://i.imgur.com/RVcaKCV.jpg"
+  bio              : #""
+  location         : #"Seattle, WA"
+  email            : #"m.ogryzko@columbia.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:m.ogryzko@columbia.edu
+      #url: mailto:m.ogryzko@columbia.edu
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url: "https://linkedin.com/in/mogryzko/"
+      #url: "https://linkedin.com/in/mogryzko/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mogryzko"
+      #url: "https://github.com/mogryzko"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -134,18 +134,18 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-link"
+      url: "https://linkedin.com/in/mogryzko"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: "https://github.com/mogryzko"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:m.ogryzko@columbia.edu"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
