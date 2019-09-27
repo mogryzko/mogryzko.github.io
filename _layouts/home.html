@@ -111,59 +111,24 @@ layout: archive
 		            var ball = svg.selectAll('#' + thisobj.id)
 		                        .data(thisobj.data)
 		            ;
+		            
+		            
 		            ball.enter()
 		            	.append("a")
 			    		.attr("xlink:href", thisobj.link)
 		            	.append("svg:image")
-						.attr("x", thisobj.posX - thisobj.radius)
-		            	.attr("y", thisobj.posY - thisobj.radius)
 		            	.attr("id", thisobj.id)
-						.attr('width', thisobj.radius*2)
-						.attr('height', thisobj.radius*2)
 						.attr("xlink:href", thisobj.logo)
 		                //.style("fill", thisobj.color)
 		            ;
+		            
 		            ball
 		                //.transition()//.duration(50)
-		                .attr("x", thisobj.posX)
-		                .attr("y", thisobj.posY)
-		            ;
-
-		            /*
-		            ball.enter()
-		            	.append("circle")
-		                .attr({"id" : thisobj.id, 'class' : 'ball', 'r' : thisobj.radius, 'weight' : thisobj.weight})
-		                .attr("fill-opacity","0.5")
-		                .style("fill", thisobj.color)
-		            ;
-		            ball
-		                //.transition()//.duration(50)
-		                .attr("cx", thisobj.posX)
-		                .attr("cy", thisobj.posY)
-		            ;
-		            */
-
-					
-
-					/*
-		            // logo
-		            svg.select("#"+thisobj.logoid).remove();
-		            svg
-			            .append("svg:image")
-						.attr("x", thisobj.posX - thisobj.radius)
+		                .attr("x", thisobj.posX - thisobj.radius)
 		            	.attr("y", thisobj.posY - thisobj.radius)
-		            	.attr("id", thisobj.logoid)
 						.attr('width', thisobj.radius*2)
 						.attr('height', thisobj.radius*2)
-						.attr("xlink:href", thisobj.logo)
-						//.style("cursor", "pointer")
-						//.on("click", function(d) {console.log("clicked");})
-					;
-					*/
-					
-					
-					
-		            
+		            ;
 					// Text
 		            /*
 		            var text = svg.selectAll('#' + thisobj.textid)
@@ -183,7 +148,7 @@ layout: archive
 
 		            
 		        }
-
+		        
 		        this.Move = function () {
 		            var svg = thisobj.svg;
 
@@ -226,7 +191,10 @@ layout: archive
 		            thisobj.Draw();
 
 		        }
+		        
+		        
 		    }
+
 
 		    function CheckCollision(ball1, ball2) {
 		        var absx = Math.abs(parseFloat(ball2.posX) - parseFloat(ball1.posX));
